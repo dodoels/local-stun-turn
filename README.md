@@ -83,13 +83,13 @@ lt-cred-mech
 To test STUN
 
 ```
-turnutils_stunclient 127.0.0.1 # or 192.168.***.***
+turnutils_stunclient 192.168.***.***
 ```
 
 To test TURN
 
 ```
-turnutils_uclient -u [username] -w [password] 127.0.0.1 # or 192.168.***.***
+turnutils_uclient -u [username] -w [password] 192.168.***.***
 ```
 
 ## 7. Connect to WebRTC
@@ -99,8 +99,8 @@ Change you config to
 ```
 "webrtc": {
     "is_stun": false, // switch STUN and TURN
-    "stun_server": "stun:127.0.0.1",
-    "turn_server": "turn:127.0.0.1",
+    "stun_server": "stun:192.168.***.***",
+    "turn_server": "turn:192.168.***.***",
     "turn_username": "username",
     "turn_password": "password",
     "requires_auth": false,
