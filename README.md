@@ -76,7 +76,7 @@ lt-cred-mech
 
 ## 5. Run Coturn Stun and Turn
 
-`turnserver -o -a -f -v -r [realm_name]`
+`turnserver -c /usr/local/etc/turnserver.conf`
 
 ## 6. Testing 
 
