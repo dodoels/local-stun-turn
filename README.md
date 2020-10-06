@@ -45,10 +45,6 @@ make && sudo make install
 ## 3. Create Admin Account
 
 ```
-# create certificate, enter random info
-openssl req -x509 -newkey rsa:2048 -keyout /etc/turn_server_pkey.pem -out /etc/turn_server_cert.pem -days 99999 –nodes
-
-# create coturn admin account.
 turnadmin -a -u [username] -p [password] -r [realm_name]
 ```
 
@@ -69,9 +65,6 @@ realm=[realm_name]
 Verbose
 fingerprint
 cli-password=1
-cert=/etc/turn_server_cert.pem
-pkey=/etc/turn_server_pkey.pem
-lt-cred-mech
 ```
 
 ## 5. Run Coturn Stun and Turn
